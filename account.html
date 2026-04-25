@@ -1,0 +1,78 @@
+<!-- account.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxora Beauty | My Account</title>
+<link rel="stylesheet" href="account.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<header class="header">
+<a href="index.html" class="logo">LUXORA</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="product.html">Product</a>
+<a href="cart.html">Cart</a>
+<a href="checkout.html">Checkout</a>
+<a href="account.html">Account</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="account-page">
+<div class="sidebar">
+<div class="profile-card">
+<div class="avatar">A</div>
+<h3>Amira Noor</h3>
+<p>Premium Member</p>
+</div>
+<a href="#orders">Orders</a>
+<a href="#wishlist">Wishlist</a>
+<a href="#addresses">Addresses</a>
+<a href="#payments">Payment Methods</a>
+<a href="#rewards">Rewards</a>
+<a href="#coupons">Coupons</a>
+<a href="#settings">Settings</a>
+<a href="#logout">Logout</a>
+</div>
+
+<div class="content">
+<section id="orders" class="panel">
+<h1>My Orders</h1>
+<div class="order-item"><span>#LX1024</span><span>Delivered</span><span>$88</span></div>
+<div class="order-item"><span>#LX1058</span><span>Shipped</span><span>$49</span></div>
+</section>
+
+<section id="wishlist" class="panel">
+<h2>Wishlist</h2>
+<div class="grid">
+<div class="card"><div class="img"></div><h3>Rose Mist</h3><button onclick="addToCart('Rose Mist',25)">Add to Cart</button></div>
+<div class="card"><div class="img"></div><h3>Night Cream</h3><button onclick="addToCart('Night Cream',54)">Add to Cart</button></div>
+</div>
+</section>
+
+<section id="rewards" class="panel">
+<h2>Rewards</h2>
+<p>You have <strong>1,250 points</strong>.</p>
+<div class="reward-boxes">
+<div class="mini">Bronze</div>
+<div class="mini active">Silver</div>
+<div class="mini">Gold</div>
+</div>
+</section>
+
+<section id="addresses" class="panel">
+<h2>Saved Addresses</h2>
+<p>Beirut, Lebanon</p>
+</section>
+</div>
+</section>
+
+<footer class="footer">© 2026 Luxora Beauty. All Rights Reserved.</footer>
+</body>
+</html>
+

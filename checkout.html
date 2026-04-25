@@ -1,0 +1,80 @@
+<!-- checkout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxora Beauty | Checkout</title>
+<link rel="stylesheet" href="checkout.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<header class="header">
+<a href="index.html" class="logo">LUXORA</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="product.html">Product</a>
+<a href="cart.html">Cart</a>
+<a href="checkout.html">Checkout</a>
+<a href="account.html">Account</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="checkout-page">
+<div class="left">
+<h1>Secure Checkout</h1>
+<p class="sub">Complete your order in a few easy steps.</p>
+
+<div class="step-box">
+<h2>1. Shipping Details</h2>
+<div class="grid2">
+<input type="text" placeholder="First Name">
+<input type="text" placeholder="Last Name">
+<input type="email" placeholder="Email Address">
+<input type="tel" placeholder="Phone Number">
+<input type="text" placeholder="Street Address">
+<input type="text" placeholder="City">
+<input type="text" placeholder="Postal Code">
+<select><option>Country</option><option>Lebanon</option><option>UAE</option><option>France</option></select>
+</div>
+</div>
+
+<div class="step-box">
+<h2>2. Delivery Method</h2>
+<label class="radio"><input type="radio" name="ship" checked> Standard Delivery (3-5 Days) - Free</label>
+<label class="radio"><input type="radio" name="ship"> Express Delivery (1-2 Days) - $12</label>
+</div>
+
+<div class="step-box">
+<h2>3. Payment Method</h2>
+<label class="radio"><input type="radio" name="pay" checked> Credit Card</label>
+<label class="radio"><input type="radio" name="pay"> PayPal</label>
+<label class="radio"><input type="radio" name="pay"> Apple Pay</label>
+<label class="radio"><input type="radio" name="pay"> Cash on Delivery</label>
+<div class="grid2 top-gap">
+<input type="text" placeholder="Card Number">
+<input type="text" placeholder="Name on Card">
+<input type="text" placeholder="Expiry MM/YY">
+<input type="text" placeholder="CVV">
+</div>
+</div>
+</div>
+
+<div class="right">
+<div class="summary">
+<h2>Order Summary</h2>
+<div id="cartItems" class="mini-cart"></div>
+<div class="line"><span>Shipping</span><span>Free</span></div>
+<div class="line total"><span>Total</span><span id="grandTotal">$0</span></div>
+<button class="place-order">Place Order</button>
+<p class="secure">🔒 SSL Secure Checkout</p>
+</div>
+</div>
+</section>
+
+<footer class="footer">© 2026 Luxora Beauty. All Rights Reserved.</footer>
+</body>
+</html>

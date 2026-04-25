@@ -1,0 +1,58 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxora Beauty | Cart</title>
+<link rel="stylesheet" href="cart.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<header class="header">
+<a href="index.html" class="logo">LUXORA</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="product.html">Product</a>
+<a href="cart.html">Cart</a>
+<a href="checkout.html">Checkout</a>
+<a href="account.html">Account</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="cart-page">
+<div class="cart-left">
+<h1>Your Shopping Cart</h1>
+<p class="sub">Review your items, update quantities, and checkout securely.</p>
+<div id="cartItems" class="cart-items"></div>
+</div>
+
+<div class="summary">
+<h2>Order Summary</h2>
+<div class="line"><span>Subtotal</span><span id="subtotal">$0</span></div>
+<div class="line"><span>Shipping</span><span>Free</span></div>
+<div class="line"><span>Tax</span><span id="tax">$0</span></div>
+<div class="line total"><span>Total</span><span id="grandTotal">$0</span></div>
+<input type="text" placeholder="Promo Code">
+<button class="apply">Apply Code</button>
+<a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+<a href="shop.html" class="continue">Continue Shopping</a>
+</div>
+</section>
+
+<section class="recommend">
+<h2>You May Also Love</h2>
+<div class="products">
+<div class="product"><div class="img"></div><h3>Rose Mist</h3><span>$25</span><button onclick="addToCart('Rose Mist',25)">Add</button></div>
+<div class="product"><div class="img"></div><h3>Night Cream</h3><span>$54</span><button onclick="addToCart('Night Cream',54)">Add</button></div>
+<div class="product"><div class="img"></div><h3>Brush Set</h3><span>$44</span><button onclick="addToCart('Brush Set',44)">Add</button></div>
+</div>
+</section>
+
+<footer class="footer">© 2026 Luxora Beauty. All Rights Reserved.</footer>
+</body>
+</html>
+

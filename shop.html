@@ -1,0 +1,61 @@
+<!-- shop.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxora Beauty | Shop</title>
+<link rel="stylesheet" href="shop.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<header class="header">
+<a href="index.html" class="logo">LUXORA</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="product.html">Product</a>
+<a href="cart.html">Cart</a>
+<a href="checkout.html">Checkout</a>
+<a href="account.html">Account</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="banner">
+<h1>Shop All Beauty Essentials</h1>
+<p>Discover premium skincare, makeup, haircare, fragrances and tools.</p>
+</section>
+
+<section class="layout">
+<aside class="sidebar">
+<h3>Filters</h3>
+<label>Category</label>
+<select><option>All</option><option>Skincare</option><option>Makeup</option><option>Haircare</option></select>
+<label>Price</label>
+<select><option>All</option><option>Under $25</option><option>$25 - $50</option><option>$50+</option></select>
+<label>Rating</label>
+<select><option>All</option><option>4★ & Up</option><option>5★</option></select>
+<label>Sort By</label>
+<select><option>Best Selling</option><option>Newest</option><option>Price Low to High</option><option>Price High to Low</option></select>
+</aside>
+
+<div class="content">
+<div class="products">
+<div class="product"><div class="img"></div><h3>Radiance Serum</h3><p>Vitamin glow treatment</p><span>$49</span><button onclick="addToCart('Radiance Serum',49)">Add to Cart</button></div>
+<div class="product"><div class="img"></div><h3>Velvet Lip Kit</h3><p>Soft matte finish</p><span>$39</span><button onclick="addToCart('Velvet Lip Kit',39)">Add to Cart</button></div>
+<div class="product"><div class="img"></div><h3>Silk Hair Oil</h3><p>Repair & shine</p><span>$29</span><button onclick="addToCart('Silk Hair Oil',29)">Add to Cart</button></div>
+<div class="product"><div class="img"></div><h3>Rose Perfume</h3><p>Elegant signature scent</p><span>$79</span><button onclick="addToCart('Rose Perfume',79)">Add to Cart</button></div>
+<div class="product"><div class="img"></div><h3>SPF Glow</h3><p>Daily UV defense</p><span>$31</span><button onclick="addToCart('SPF Glow',31)">Add to Cart</button></div>
+<div class="product"><div class="img"></div><h3>Body Butter</h3><p>Deep nourishment</p><span>$27</span><button onclick="addToCart('Body Butter',27)">Add to Cart</button></div>
+<div class="product"><div class="img"></div><h3>Night Cream</h3><p>Overnight repair</p><span>$54</span><button onclick="addToCart('Night Cream',54)">Add to Cart</button></div>
+<div class="product"><div class="img"></div><h3>Brush Set</h3><p>Professional tools</p><span>$44</span><button onclick="addToCart('Brush Set',44)">Add to Cart</button></div>
+</div>
+</div>
+</section>
+
+<footer class="footer">© 2026 Luxora Beauty. All Rights Reserved.</footer>
+</body>
+</html>
+
